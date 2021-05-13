@@ -1,0 +1,36 @@
+extends base.pug
+block scripts
+   scripts(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+block content      
+    section#slider       
+           h1 Welcome to Livelong Dry-Fruits
+           a(href="/") BUY NOW
+    section.category_section
+        div.section_intro
+           div.cate_sect_head
+             h1 Shop By Category
+             span This made for you
+        div.category_content     
+            div.category_card
+               div.card
+                  div.card_bg1
+                    img(src="/static/img/img9.jpg")
+               div.card
+                  div.card_bg1
+                    img(src="/static/img/img11.jpg")
+               div.card
+                  div.card_bg1
+                    img(src="/static/img/img7.jpg")
+               div.card
+                  div.card_bg1
+                    img(src="/static/img/img6.jpg")
+               div.card
+                  div.card_bg1
+                    img(src="/static/img/img4.jpg")
+               div.card
+                  div.card_bg1
+                    img(src="/static/img/img2.jpg")   
