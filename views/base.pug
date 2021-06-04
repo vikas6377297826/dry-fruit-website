@@ -2,20 +2,31 @@ Doctypehtml
 html
   head
     title LiveLong Dry Fruits
-    block scripts
-        scripts(src='/static/index.js')
     block style
         style
           include ../static/style.css
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css")      
   body
     nav#navbar
        div#logo  
        div#component
-         ul
-           li #[a(href="/") Home]
-           li #[a(href="/") Services]
-           li #[a(href="/") About us]
-           li #[a(href="/") Contact us] 
+         ul#comp-btn
+           li.active #[a(href="/") Home]
+           li #[a(href="/products") Products]
+           li #[a(href="/service") Services] 
+           li #[a(href="/about") About us]
     block content
     footer#footer    
+        div.social_site
+         a(href="/")     
+          i.fa.fa-instagram 
+         a(href="/") 
+          i.fa.fa-facebook  
+         a(href="/") 
+          i.fa.fa-twitter 
+         a(href="/") 
+          i.fa.fa-whatsapp
         h4 Copyright &copy 2021 livelongdryfruit.com | All right reserved
+    block scripts
+        script(src='/static/index.js')
+        script(src='/static/index2.js')    

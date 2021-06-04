@@ -1,0 +1,50 @@
+.product-container{
+    margin: 20px 10px;
+    background: red;
+}
+.container{
+    position: relative; 
+}
+.container-head{
+    margin: 5px 0;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    background: white;
+}
+.container-head h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: black;
+}
+.container-head p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #726b6b;
+}
+.container-main{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+.container-item{
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    background: white;
+    height: 300px;
+    border: 2px solid black;
+}
+.container-item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+

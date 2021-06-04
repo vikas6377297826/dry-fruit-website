@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+        scripts(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css 
+    style
+      include ../static/product.css
+block content
+    section.product.slider       
+           h1 Welcome to Livelong Dry-Fruits
+    section.product-container
+        div.container
+          div.container-head
+            h3 Our Product
+            p  Value Of Money
+          div.container-main  
+            div.container-item
+             img(src="/static/img/img1.jpg")
+             h3 product 1
+            div.container-item
+             img(src="/static/img/img2.jpg")
+             h3 product 2
+            div.container-item
+             img(src="/static/img/img3.jpg")
+             h3 product 3
+            div.container-item
+             img(src="/static/img/img4.jpg")
+             h3 product 4
+            div.container-item
+             img(src="/static/img/img5.jpg")
+             h3 product 5
+            div.container-item
+             img(src="/static/img/img6.jpg")
+             h3 product 6
+            div.container-item
+             img(src="/static/img/img7.jpg")
+             h3 product 7
+            div.container-item
+             img(src="/static/img/img8.jpg")
+             h3 product 8
+block scripts
+        script(src='/static/index.js')
+        script(src='/static/index2.js')        

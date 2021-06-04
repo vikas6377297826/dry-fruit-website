@@ -6,13 +6,6 @@ const port = 9000;
 
 
 
-
-
-
-
-
-
-
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())
@@ -25,7 +18,30 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 app.get('/', (req, res)=>{
     const params = { }
     res.status(200).render('home.pug', params);
-})
+});
+
+// about.pug
+app.get('/about', (req, res)=>{
+    const params = { }
+    res.status(200).render('about.pug', params);
+});
+
+app.get('/products', (req, res)=>{
+    const params = { }
+    res.status(200).render('products.pug', params);
+});
+
+app.get('/service', (req, res)=>{
+    const params = { }
+    res.status(200).render('service.pug', params);
+});
+
+// almond.pug
+app.get('/almond', (req, res)=>{
+    const params = { }
+    res.status(200).render('almond.pug', params);
+});
+
 
 // START THE SERVER
 app.listen(port, ()=>{

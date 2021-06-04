@@ -1,14 +1,12 @@
 extends base.pug
-block scripts
-   scripts(src='/static/index.js')
 
 block style
     style
-      include ../static/style.css
+      include ../static/style.css 
 block content      
-    section#slider       
+    section.slider       
            h1 Welcome to Livelong Dry-Fruits
-           a(href="/") BUY NOW
+           a#buy-now(href="/almond") BUY NOW
     section.category_section
         div.section_intro
            div.cate_sect_head
@@ -17,20 +15,33 @@ block content
         div.category_content     
             div.category_card
                div.card
-                  div.card_bg1
+                 a(href="almond") 
+                  div.card_bg1#first
                     img(src="/static/img/img9.jpg")
                div.card
+                 a(href="almond")
                   div.card_bg1
-                    img(src="/static/img/img11.jpg")
+                    img(src="/static/img/img11.jpg")  
                div.card
+                 a(href="almond")
                   div.card_bg1
                     img(src="/static/img/img7.jpg")
                div.card
+                 a(href="almond")
                   div.card_bg1
                     img(src="/static/img/img6.jpg")
                div.card
+                 a(href="almond")
                   div.card_bg1
                     img(src="/static/img/img4.jpg")
                div.card
+                 a(href="almond")
                   div.card_bg1
                     img(src="/static/img/img2.jpg")   
+               div.card
+                 a(href="almond")
+                  div.card_bg1
+                    img(src="/static/img/img8.jpg")   
+block scripts
+        script(src='/static/index.js')
+        script(src='/static/index2.js')                    
